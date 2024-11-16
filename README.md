@@ -11,11 +11,15 @@ The solution consists of the following components:
 
 The intended audience for this README is experienced developers who are familiar with cryptographic concepts and hierarchical key derivation (such as BIP-32, BIP-39). The code relies on Python libraries for cryptographic functions and mnemonic generation.
 
+---
+
 ## Key Features
 - **Mnemonic Phrase Generation**: Uses a BIP-39-compatible word list to convert entropy into a human-readable mnemonic phrase.
 - **Master and Child Key Derivation**: Utilizes HMAC-SHA512 to derive a master key and chain code for hierarchical deterministic key generation.
 - **Bitcoin Address Management**: Allows for the generation of Bitcoin addresses from derived keys.
 - **Jupyter Notebook Integration**: Provides an interactive environment for generating and managing wallets.
+
+---
 
 ## Code Walkthrough
 
@@ -42,16 +46,22 @@ This notebook is responsible for the cryptographic backend and wallet generation
 9. **Child Key Derivation**:
    - Supports hierarchical key derivation for both hardened and non-hardened child keys.
 
+---
+
 ## Requirements
 - Python 3.7+
 - Jupyter Notebook
 - Required libraries listed in `requirements.txt`
+
+---
 
 ## Dependencies
 Install the following dependencies before running the project:
 - **bit**: Bitcoin library for address generation and interaction (`pip install bit`)
 - **ecdsa**: Library for elliptic curve operations (`pip install ecdsa`)
 - **PyQt5**: For graphical user interface integration (if planning to add a GUI) (`pip install PyQt5`)
+
+---
 
 ## Installation
 
@@ -73,6 +83,8 @@ Install the following dependencies before running the project:
    jupyter notebook Bitcoin-Wallet.ipynb
    ```
 
+---
+
 ## Usage
 1. **Generate a new mnemonic phrase**: 
    - Run the notebook cells to create a mnemonic using the word list in `english.txt`.
@@ -81,15 +93,24 @@ Install the following dependencies before running the project:
 3. **Manage transactions**:
    - Generate addresses and perform operations such as querying balance and signing transactions.
 
+---
+
 ## Important Notes
 - **Wordlist**: The word list used for mnemonic generation is provided in `english.txt` and should conform to BIP-39 (2048 words).
 - **Test Environment Only**: This code is intended for educational purposes and testing. It is not suitable for use in a production environment.
 - **Security**: Always store private keys and mnemonic phrases securely.
 
+---
+
 ## License
 This project is licensed under the MIT License.
+
+---
 
 ## Acknowledgements
 - BIP-32 and BIP-39 standards for hierarchical deterministic wallets.
 - The Python `bit` library for Bitcoin address and key management.
 
+---
+
+By following this guide, you can explore the inner workings of Bitcoin wallet generation and hierarchical key derivation techniques.
